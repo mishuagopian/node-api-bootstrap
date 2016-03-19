@@ -6,7 +6,8 @@
   "author": "Mishu Agopian",
   "scripts": {
     "test": "NODE_ENV=testing ./node_modules/mocha/bin/mocha test/app.js",
-    "start": "./node_modules/nodemon/bin/nodemon.js app.js"
+    "start": "./node_modules/nodemon/bin/nodemon.js app.js",
+    "prestart" :"./node_modules/jslint/bin/jslint.js **/*.js"
   },
   "bugs": {
     "url": "https://github.com/mishuagopian/node-api/issues",
@@ -18,6 +19,7 @@
     "chai-http": "^2.0.1",
     "express": "^4.9.4",
     "jwt-simple": "^0.2.0",
+    "jslint": "^0.9.6",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.0",
     "orm": "^2.1.30",

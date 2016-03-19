@@ -12,14 +12,14 @@ exports.login = function (req, res, next) {
         };
     }
 
-    orm.models.user.one(user, function(err, u) {
+    orm.models.user.one(user, function (err, u) {
 
         if (err) {
             res.status(503);
             res.send({ error: err });
         } else if (!u) {
             res.status(400);
-            res.send({ error: 'Invalid user'});
+            res.send({ error: 'Invalid user' });
         } else {
             var auth = sessionManager.encode(u);
 
@@ -39,7 +39,7 @@ exports.update = function (req, res, next) {
     user.username = update.username || user.username;
     user.email = update.email || user.email;
 
-    user.save(function(err, u) {
+    user.save(function (err, u) {
         if (err) {
             res.status(400);
             res.send({ error: err });
@@ -77,7 +77,7 @@ exports.create = function (req, res, next) {
         };
     }
 
-    orm.models.user.create(user, function(err, u) {
+    orm.models.user.create(user, function (err, u) {
 
         if (err) {
             res.status(400);
