@@ -6,7 +6,9 @@ exports.execute = function (db, cb) {
             { name: 'book 3' }
         ],
         function(err) {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
 
             db.models.user.create(
                 [
@@ -15,7 +17,10 @@ exports.execute = function (db, cb) {
                     { firstName: 'firstName3', lastName: 'lastName3', username: 'username3', email: 'email3@gmail.com', password: '1234' }
                 ],
                 function(err) {
-                    if (err) throw err;
+                    if (err) {
+                        throw err;
+                    }
+
                     if (cb) {
                         cb();
                     }

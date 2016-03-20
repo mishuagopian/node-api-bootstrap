@@ -7,7 +7,7 @@ describe('books', function () {
         it('should return all books', function (done) {
             chai.request(server)
                 .get('/books')
-                .end(function(err, res){
+                .end(function (err, res) {
                     res.should.have.status(200);
                     res.should.be.json;
                     res.body.books.should.be.a('array');
@@ -21,13 +21,13 @@ describe('books', function () {
                     done();
                 });
         });
-    })
+    });
 
     describe('/books/:id GET', function (done) {
         it('should return book with id 1', function (done) {
             chai.request(server)
                 .get('/books/1')
-                .end(function(err, res){
+                .end(function (err, res) {
                     res.should.have.status(200);
                     res.should.be.json;
                     res.body.should.have.property('id');
@@ -44,7 +44,7 @@ describe('books', function () {
         it('should return error for book with id 5', function (done) {
             chai.request(server)
                 .get('/books/5')
-                .end(function(err, res){
+                .end(function (err, res) {
                     res.should.have.status(400);
                     res.should.be.json;
                     res.body.should.have.property('error');

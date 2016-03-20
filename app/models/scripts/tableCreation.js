@@ -5,7 +5,9 @@ exports.execute = function (DB_URL, cb) {
 
     orm.connect(DB_URL, function (err, db) {
 
-        if (err) throw err;
+        if (err) {
+            throw err;
+        }
 
         // console.log('Connected to db!');
 
@@ -13,7 +15,9 @@ exports.execute = function (DB_URL, cb) {
 
         // add the table to the database
         db.sync(function(err) { 
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
 
             if (cb) {
                 cb(db);

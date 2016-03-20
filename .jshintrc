@@ -1,0 +1,8 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "expr": true,
+  "freeze": true,
+  "mocha": true,
+  "node": true
+}
