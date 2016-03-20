@@ -14,7 +14,7 @@ exports.execute = function (DB_URL, cb) {
         models.define(orm, db);
 
         // add the table to the database
-        db.sync(function(err) { 
+        db.sync(function (err) {
             if (err) {
                 throw err;
             }

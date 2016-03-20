@@ -1,0 +1,71 @@
+{
+  "disallowMixedSpacesAndTabs": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleSpaces": true,
+  "disallowNamedUnassignedFunctions": true,
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "disallowSpaceAfterComma": false,
+  "disallowSpaceAfterKeywords": false,
+  "disallowSpaceBeforeBlockStatements": false,
+  "disallowSpaceBeforeComma": true,
+  "disallowSpaceBeforeKeywords": false,
+  "disallowSpaceBeforeSemicolon": true,
+  "disallowSpaceBetweenArguments": false,
+  "disallowSpacesInCallExpression": true,
+  "disallowSpacesInForStatement": false,
+  "disallowSpacesInsideParentheses": true,
+  "disallowSpacesInsideParenthesizedExpression": {
+    "allExcept": [ "{", "}" ]
+  },
+  "disallowSpacesInsideTemplateStringPlaceholders": true,
+  "disallowTabs": true,
+  "disallowTrailingComma": true,
+  "disallowTrailingWhitespace": true,
+  "disallowYodaConditions": true,
+  "requireAlignedMultilineParams": "firstParam",
+  "requireAnonymousFunctions": true,
+  "requireBlocksOnNewline": true,
+  "requireCommaBeforeLineBreak": true,
+  "requireCurlyBraces": true,
+  "requireDotNotation": true,
+  "requireLineBreakAfterVariableAssignment": true,
+  "requireLineFeedAtFileEnd": true,
+  "requireObjectKeysOnNewLine": true,
+  "requireSemicolons": true,
+  "requireSpaceAfterComma": true,
+  "requireSpaceAfterKeywords": true,
+  "requireSpaceBeforeBlockStatements": 1,
+  "requireSpaceBeforeKeywords": true,
+  "requireSpaceBeforeObjectValues": true,
+  "requireSpaceBetweenArguments": true,
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInConditionalExpression": {
+    "afterTest": true,
+    "beforeConsequent": true,
+    "afterConsequent": true,
+    "beforeAlternate": true
+  },
+  "requireSpacesInFunctionDeclaration": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInFunction": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInNamedFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInsideObjectBrackets": "all",
+  "validateIndentation": 4,
+  "validateQuoteMarks": true,
+}

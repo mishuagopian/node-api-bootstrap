@@ -1,7 +1,6 @@
 var m = require('./middlewares'),
     books = require('./controllers/books'),
-    users = require('./controllers/users'),
-    unknownResource = require('./controllers/unknownResource');
+    users = require('./controllers/users');
 
 exports.init = function (app) {
 

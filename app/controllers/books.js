@@ -26,7 +26,7 @@ exports.getById = function (req, res) {
             res.send({ error: err });
         } else if (!b) {
             res.status(400);
-            res.send({ error: 'Invalid book id'});
+            res.send({ error: 'Invalid book id' });
         } else {
             res.status(200);
             res.send(b);

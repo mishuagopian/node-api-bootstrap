@@ -7,8 +7,8 @@
   "scripts": {
     "test": "NODE_ENV=testing ./node_modules/mocha/bin/mocha test/app.js",
     "start": "./node_modules/nodemon/bin/nodemon.js app.js",
-    "pretest": "./node_modules/jshint/bin/jshint **/*.js && ./node_modules/jshint/bin/jshint **/**/*.js && ./node_modules/jshint/bin/jshint **/**/**/*.js",
-    "prestart": "./node_modules/jshint/bin/jshint **/*.js && ./node_modules/jshint/bin/jshint **/**/*.js && ./node_modules/jshint/bin/jshint **/**/**/*.js"
+    "pretest": "./node_modules/jscs/bin/jscs **/*.js && ./node_modules/jscs/bin/jscs **/**/*.js && ./node_modules/jscs/bin/jscs **/**/**/*.js && ./node_modules/jshint/bin/jshint **/*.js && ./node_modules/jshint/bin/jshint **/**/*.js && ./node_modules/jshint/bin/jshint **/**/**/*.js",
+    "prestart": "./node_modules/jscs/bin/jscs **/*.js && ./node_modules/jscs/bin/jscs **/**/*.js && ./node_modules/jscs/bin/jscs **/**/**/*.js && ./node_modules/jshint/bin/jshint **/*.js && ./node_modules/jshint/bin/jshint **/**/*.js && ./node_modules/jshint/bin/jshint **/**/**/*.js"
   },
   "bugs": {
     "url": "https://github.com/mishuagopian/node-api/issues",
@@ -24,6 +24,7 @@
     "nodemon": "^1.9.0",
     "orm": "^2.1.30",
     "pg": "^4.4.6",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "jscs": "^2.11.0"
   }
 }

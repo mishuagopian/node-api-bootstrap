@@ -3,10 +3,11 @@ var orm = require('orm'),
     tableCreation = require('./models/scripts/tableCreation'),
     models = require('./models/models');
 
-var DB_URL = config.common.database.url ||
-                ('postgres://' + config.common.database.username + ':' + config.common.database.password +
-                '@' + config.common.database.host + ':' + config.common.database.port +
-                '/' + config.common.database.database);
+var DB_URL = config.common.database.url
+                || ('postgres://'
+                + config.common.database.username + ':' + config.common.database.password
+                + '@' + config.common.database.host + ':' + config.common.database.port
+                + '/' + config.common.database.database);
 var dbModels = {};
 
 exports.init = function (app) {
