@@ -3,6 +3,7 @@
   "eqeqeq": true,
   "expr": true,
   "freeze": true,
+  "laxbreak": true,
   "mocha": true,
   "node": true
 }
