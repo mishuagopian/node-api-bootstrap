@@ -4,11 +4,13 @@ const fs = require('fs'),
   path = require('path'),
   chai = require('chai'),
   chaiHttp = require('chai-http'),
+  chaiAsPromised = require('chai-as-promised'),
   DB_URL = require('./../app/orm').DB_URL,
   tableCreation = require('./../app/models/scripts/tableCreation'),
   dataCreation = require('./../app/models/scripts/dataCreation');
 
 chai.use(chaiHttp);
+chai.use(chaiAsPromised);
 
 let database;
 
