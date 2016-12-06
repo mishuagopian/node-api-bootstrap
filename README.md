@@ -1,4 +1,4 @@
-Node API Bootstrap [![Build Status](https://api.travis-ci.org/mishuagopian/node-api-bootstrap.png)](https://travis-ci.org/mishuagopian/node-api-bootstrap) [![Coverage Status](https://coveralls.io/repos/github/mishuagopian/node-api-bootstrap/badge.png?branch=master)](https://coveralls.io/github/mishuagopian/node-api-bootstrap?branch=master)
+Node API Bootstrap
 ===============
 
-Kickoff for node api applications.
+Kickoff for node api applications. This repository is no longer maintained, please refer to https://github.com/Wolox/express-js-bootstrap for latest version.
